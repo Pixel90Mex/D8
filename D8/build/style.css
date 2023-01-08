@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+}
+/*header*/
+header {
+    width: 100%;
+    height: 8vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    gap: 36%;
+    border-bottom: grey solid 1px;
+    box-shadow: 0px 3px 7px black;
+}
+
+#container div:first-of-type {
+    height: 100%;
+}
+
+#container div:first-of-type img, #Nav_One {
+    margin-left: -5px;
+}
+
+#container div:last-child {
+    display: flex;
+    width: 15%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container div:last-child button {
+    font-size: 11pt;
+    font-weight: 800;
+    border-style: none;
+    border-radius: 55px;
+}
+
+#container div:last-child span {
+    width: 25px;
+    height: 25px;
+    font-size: 18pt;
+    font-weight: 400;
+    color: white;
+    border-radius: 100px;
+}
+/*main*/
+main {
+    display: inline-flex;
+    width: 100%;
+    height: 200vh; 
+}
+/*Left*/
+#Left {
+    position: relative;
+    width: 70%;
+}
+
+#Sub_section_One {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    left: 9%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Nav_One {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    width:100%;
+    height: 5%;
+    margin: 0%;
+    border-bottom: grey solid 1px;
+}
+
+#Nav_One div:first-of-type , #Nav_One div:last-of-type {
+    position: absolute;
+    bottom: 0%;
+}
+
+#Nav_One div:first-of-type {
+    left:8%;
+}
+
+#Nav_One div:last-of-type {
+    left:20%;
+    border-bottom: black solid 3px;
+}
+
+.Article {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Board {
+    display: flex;
+    width: 98%;
+    height: 250px;
+    align-self: center;
+    gap: 2.3%;
+}
+
+.Sub_Board_One {
+    width: 70%;
+    height: 100%;
+}
+
+.Title {
+    display: flex;
+    width: 100%;
+    height: 14%;
+    align-items: center;
+    justify-content: left;
+    gap:3%;
+}
+
+.Title div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 25px;
+}
+
+.Title img {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Contents {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.Contents p {
+    text-align:justify;
+    position: absolute;
+    line-height: 1.5;
+    top: 15%;
+    bottom: 10%;
+    right: 5%;
+    left: 5%;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+h3, p {
+    margin: 0;
+}
+
+
+.Footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 16%;
+    gap:20%;
+}
+
+.Footer button {
+    font-size: 11pt;
+    font-weight: 800;
+    border-style: none;
+    border-radius: 55px;
+    background-color: rgba(204, 219, 219, 0.493);
+}
+
+.Img_Container {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 25px;
+}
+
+.Img_Container div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    
+}
+
+.Img_Container img {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.video {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    transition: opacity 0.2s;
+}
+
+.Img_Container:hover .video{
+    z-index: 2;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*sezione destra*/
+
+#Right {
+    width: 30%;
+    border-left:solid 1px ;
+}
+
+#Article_2 {
+    width: 100%;   
+    position: sticky;
+    top:0;
+}
+
+.Padding {
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+/*primo blocco*/
+#Board2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Board2 button {
+    font-size: 15pt;
+    font-weight: 800;
+    border-style: none;
+    border-radius: 55px;
+    margin-top: 15px;
+}
+
+#Board2 h2 {
+    text-align: center;
+}
+
+#Board2 a {
+    color: black;
+}
+
+/*secondo blocco*/
+
+#Buttons {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.One {
+    width: 100%;
+}
+
+#Buttons button {
+    font-size: 15pt;
+    font-weight: 800;
+    border-style: none;
+    border-radius: 55px;
+    margin-top: 15px;
+}
+
+/*terzo blocco*/
+
+.Two {
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    padding-top: 5%;
+}
+
+.Two button {
+    font-size: 15pt;
+    font-weight: 800;
+    border-style: none;
+    border-radius: 55px;
+    margin-top: 15px;
+}
+
+.S_Two {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 25px;
+}
+
+.T_Image img {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    object-fit: cover;
+    object-position: center;  
+}
+
+/*blocco 3*/
+#Board3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#p-Board {
+    font-size: 18pt;
+    font-weight: 800;
+    padding-top: 2%;
+} 
+
+.Article_Right {
+    display: inline-flex;
+    align-items: center;
+    gap:5%;
+}
+
+.Article_Right div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 25px;
+}
+
+.Article_Right img {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+#Board3 div:nth-child(2) {
+    padding-top: 3%;
+}
+
+#Board3 div:last-of-type {
+    padding-top: 3%;
+}
+
+#Board3 p:nth-child(3), #Board3 p:last-of-type{
+    font-size: 13pt;
+    font-weight: 100;
+    padding-top: 2%;
+    color: gray;
+}
+
+#Board3 a {
+    align-self: flex-start;
+    color: green;
+}
+
+/*blocco4*/
+
+#Board4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 400px;
+    gap: 5%;
+}
+
+#Board4 button {
+    color: grey;
+    margin-bottom: 11px;
+    font-size: 11pt;
+    font-weight: 400;
+    border-style: none;
+    border-radius: 55px;
+    margin-top: 15px;
+}
+
+
+
+
+
